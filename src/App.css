@@ -1,10 +1,3 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -12,21 +5,14 @@
 }
 
 .container-header {
-  position:relative;
-}
+  background-image: url(./assets/images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: 165%;
+  width: auto;
+  height: 400px;
+  color: #FFFFFF;
+  overflow: hidden;
 
-.container-header:after {
-  content: "";
-  display:block;
-  background: #707070;
-  border: 1px solid #707070;
-  width:200%;
-  height:399px;
-  position:absolute;
-  left:-60%;
-  top:-90%;
-  z-index:-1;
-  transform: rotate(6deg);
 }
 
 .header {
@@ -35,22 +21,23 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 70px;
 }
 
 .header h2 {
-  margin-bottom: 24px;
+  margin-bottom: 44px;
   margin-top: 8px;
-  font-size: 2.5em;
+  font-size: 3em;
 
 }
 
 .header-title {
-  font-size: 1.25em;
+  margin-top: 60px;
+  margin-bottom: 7px;
+  font-size: 1.5em;
 }
 
 .header-info {
-  font-size: 0.8em;
+  font-size: 1rem;
   margin-bottom: 45px;
  
 }
@@ -58,4 +45,147 @@
 .header-button {
   display: flex;
   gap: 40px;
+  color: #888888;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  width: 520px;
+  height: 270px;
+  margin-left: 270px;
+  word-wrap: break-word;
+}
+
+.about p {
+  font-size: 0.8em;
+}
+
+.about h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.forms {
+  width: 340px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  margin: 45px 270px 15px 60px;
+  justify-content: space-evenly;
+  font-size: 0.8em;
+}
+
+.forms label {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.forms input {
+  padding: 7px;
+}
+
+.forms .nome, .email {
+  margin-bottom: 20px;
+}
+
+.forms .cpf {
+  margin-bottom: 15px;
+}
+
+.forms Button {
+  height: 39px;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #888888;
+  border-color: #888888;
+}
+
+.radio-button {
+  margin: 10px 0 10px 0;
+  padding: 10px;
+}
+
+.radio-button input, label {
+  margin-right: 6px;
+}
+
+.radio-button #feminino {
+  margin-left: 30px;
+}
+
+.container-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 140px;
+}
+
+.separador {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter p {
+  margin-bottom: 30px;
+  font-size: 1em;
+}
+
+.form-newsletter {
+  display: flex;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+  font-size: 0.8em;
+}
+
+.newsletter input {
+  width: 340px;
+  height: 30px;
+  padding: 8px;
+}
+
+.newsletter button {
+  width: 260px;
+  height: 39px;
+  margin-top: 50px;
+  border-color: #888888;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url(./assets/images/bg-footer.png);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  width: auto;
+  height: 350px;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.footer {
+  margin-top: 170px;
+  font-size: 0.85em;
 }
